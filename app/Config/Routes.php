@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/',  'Home::index');
+//$routes->get('/',  'Home::index');
 //======== Tugas 3 ========
 // /kategori = link permintaan dari user 
 // diarahkan ke method  dalam file KategoriController. 
@@ -16,7 +16,7 @@ $routes->get('/kategori/v_pertukangan', 'KategoriController::pertukangan');
 $routes->get('/kategori/v_elektronik', 'KategoriController::elektronik');
 $routes->get('/kategori/v_snack', 'KategoriController::snack');
 //======== Tugas 4 Layout ========
-$routes->get('/tugas4',  'Tugas3Controller::home4');
+$routes->get('/',  'Tugas3Controller::home4');// home tugas
 $routes->get('/produk',  'Tugas3Controller::produk');
 //$routes->get('/login4',  'Tugas3Controller::login');
 //======== Tugas 5 Session ========
